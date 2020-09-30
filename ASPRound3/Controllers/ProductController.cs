@@ -25,5 +25,14 @@ namespace ASPRound3.Controllers
             return View(products);
         }
 
+        // add method to create view one product at a time
+
+        public IActionResult ViewProduct(int id)
+        {
+            var product = repo.GetProduct(id);
+
+            return View(product);
+        }
+
     }
 }
