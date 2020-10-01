@@ -1,6 +1,15 @@
 ﻿@@model IEnumerable<Product>
 
     <h2>Products</h2>
+
+
+    @*give the user the ability to make create new products*@
+
+    <div style="display: inline-block" class="btn btn-outline-success">
+        <a href="/Product/InsertProduct/">Create a New Product</a>
+    </div>
+
+
     <table class="table">
         <tr>
             <th>ID</th>
