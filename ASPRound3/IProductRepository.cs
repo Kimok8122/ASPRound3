@@ -20,8 +20,8 @@ namespace ASPRound3
         public IEnumerable<Category> GetCategories();
         public Product AssignCategory();
 
-
-
+        //the user the ability to delete products
+        public void DeleteProduct(Product product);
 
     }
 }

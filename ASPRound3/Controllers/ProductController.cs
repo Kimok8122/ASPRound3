@@ -76,6 +76,16 @@ namespace ASPRound3.Controllers
             return RedirectToAction("Index");
         }
 
+        //the user the ability to delete products
+
+        public IActionResult DeleteProduct(Product product)
+        {
+            repo.DeleteProduct(product);
+
+            return RedirectToAction("Index");
+        }
+
+
 
 
     }
